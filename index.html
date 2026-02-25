@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NEO-Guardian | Defense System</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <div id="hud-top">
+            <div class="glitch">NEO-GUARDIAN v1.3</div>
+            <div id="selector-container">
+                <select id="asteroid-select">
+                    <option value="">SCANNING SECTOR...</option>
+                </select>
+            </div>
+            <div class="status">SYSTEM: ACTIVE | SCANNING DEEP SPACE</div>
+        </div>
+        <div id="stats">
+            <div id="obj-name">TARGET: ACQUIRING...</div>
+            <div id="obj-dist">DISTANCE: ---</div>
+            <div id="obj-energy">IMPACT ENERGY: ---</div>
+            <div id="obj-danger">STATUS: LOADING DATA...</div>
+        </div>
+        <div id="telemetry">
+            <div class="label-tech">TELEMETRY DATA</div>
+            <div id="obj-date">ARRIVAL: ---</div>
+            <div id="obj-size">DIAMETER: ---</div>
+            <div id="obj-velocity">VELOCITY: ---</div>
+            <div id="obj-mag">MAGNITUDE: ---</div>
+        </div>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+                }
+            }
+        </script>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
